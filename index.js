@@ -193,7 +193,7 @@ InfluxDB.prototype.dropMeasurement = function (measurementName, callback) {
 }
 
 InfluxDB.prototype.dropSeries = function (seriesId, callback) {
-  this.queryDB('drop series ' + seriesId, callback)
+  this.queryDB('drop series from ' + seriesId, callback)
 }
 
 InfluxDB.prototype.getUsers = function (callback) {
